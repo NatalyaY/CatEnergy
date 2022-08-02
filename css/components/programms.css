@@ -1,0 +1,238 @@
+.programms__item {
+	background: #F2F2F2;
+	height: 100%;
+}
+
+.programms__item__link {
+	justify-content: start !important;
+	align-items: center;
+	width: fit-content;
+}
+
+.programms__item__link__arrow {
+	transform: translateX(-4px);
+	transition: .4s ease-out;
+}
+
+.programms__item__link__arrow__container {
+	overflow: hidden;	
+	margin-left: 28px;
+	width: 32px;
+	display: flex;
+	align-items: center;
+}
+
+.programms__item__heading__img {
+	display: inline-block;
+	width: 100px;
+	aspect-ratio: 1;
+	background-color: #64a83b;
+	border-radius: 50%;
+}
+
+.programms__item__heading:before {
+	content: "";
+    position: absolute;
+    background-color: #64a83b;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    min-width: 50px;
+}
+
+.programms__item__heading:after {
+	content: "";
+    position: absolute;
+	top: 0;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.programms__item--weight-lose .programms__item__heading:after {
+	background-image: url(../../img/slim-icon.png);
+    background-size: contain;
+    aspect-ratio: 70/97;
+    min-width: 40px;
+}
+
+.programms__item--mass .programms__item__heading:after {
+	background-image: url(../../img/mass-icon.png);
+    background-size: contain;
+    aspect-ratio: 134/56;
+    min-width: 57px;
+}
+
+
+/* ********* ********* HOVERS ********* ********* */
+
+
+.programms__item__link:hover .programms__item__link__arrow {
+	transform: translateX(0);
+	transition: .4s ease-out;
+}
+
+.programms__item__link:active {
+	opacity: .3;
+}
+
+/* ********* ********* MEDIA ********* ********* */
+
+@media (max-width: 575px) {
+
+	.programms__item__link {
+		font-size: 16px;
+		line-height: 1;
+	}
+}
+
+
+@media (min-width: 0) {
+
+	.programms__item {
+	    padding: 30px 20px 20px;
+	}
+
+	.programms__item__heading {
+		padding-bottom: 29px;
+		padding-left: 69px;
+		position: relative;
+	}
+
+	.programms__item__text {
+		padding-bottom: 23px;
+		border-bottom: 1px solid #D9D9D9;
+	}
+
+	.programms__item__link {
+		padding-top: 15px;
+	}
+
+	.programms__item__heading:before {
+	    width: 21%;
+	    top: 0.05em;
+	    left: 0;
+	    transform: translate(0%, calc(-50% + 0.5em));
+	    max-width: 60px;
+	}
+
+	.programms__item__heading:after {
+	    left: 0;
+	}
+
+	.programms__item--weight-lose .programms__item__heading:after {
+	    max-height: 67px;
+	    width: 15%;
+	    transform: translate(8%, calc(-50% + 0.5em));
+	}
+
+	.programms__item--mass .programms__item__heading:after {
+		max-width: 67px;
+	    width: 27%;
+	    transform: translate(-8%, calc(-50% + 0.5em));
+	}
+	
+}
+
+@media (min-width: 576px) {
+
+	.programms__item {
+	    padding: 77px 51px 55px 52px;
+	}
+
+	.programms__item__heading {
+		padding-bottom: 24px;
+		padding-left: 0;
+		position: static;
+	}
+	
+	.programms__item__text {
+		padding-bottom: 48px;
+		border-bottom: none;
+	}
+
+	.programms__item__link {
+		padding-top: 0;
+	}
+
+	.programms__item__content {
+		position: relative;
+    	padding-right: 45%;
+	}
+
+	.programms__item__heading:before {
+	    width: 33.5%;
+	    top: 0;
+	    right: 0;
+	    left: auto;
+	    transform: none;
+	    max-width: 200px;
+	}
+	
+	.programms__item__heading:after {
+	    height: unset;
+	    right: 0;
+	    left: auto;
+	}
+	
+	.programms__item--weight-lose .programms__item__heading:after {
+		background-image: url(../../img/slim-icon-tablet.png);
+	    max-height: 200px;
+	    width: 25%;
+	    transform: translate(-20%, -5%);
+	}
+
+	.programms__item--mass .programms__item__heading:after {
+		background-image: url(../../img/mass-icon-tablet.png);
+		max-width: 268px;
+	    width: 49%;
+	    transform: translate(10%, 40%);
+	}
+}
+
+@media (min-width: 769px) {
+	.programms__item__heading {
+		padding-left: 82px;
+		padding-bottom: 73px;
+		position: relative;
+	}
+	
+	.programms__item__text {
+		padding-bottom: 23px;
+	}
+
+	.programms__item__content {
+		position: static;
+    	padding-right: 0;
+	}	
+
+	.programms__item__heading:before {
+	    width: 21%;
+	    top: 0.05em;
+	    left: 0;
+	    transform: translate(0%, calc(-50% + 0.5em));
+	    max-width: 100px;
+	}
+	
+	.programms__item__heading:after {
+	    left: 0;
+	}
+	
+	.programms__item--weight-lose .programms__item__heading:after {
+		background-image: url(../../img/slim-icon.png);
+		max-width: 70px;
+	    width: 15%;
+	    transform: translate(25%, calc(-50% + 0.5em));
+	}
+
+	.programms__item--mass .programms__item__heading:after {
+		background-image: url(../../img/mass-icon.png);
+		max-width: 134px;
+	    width: 29%;
+	    transform: translate(-16%, calc(-50% + 0.5em));
+	}
+}
+
+@media (min-width: 1024px) {
+	.programms__item__heading {
+		padding-left: 162px;
+	}
+}

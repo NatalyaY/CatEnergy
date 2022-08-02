@@ -1,0 +1,142 @@
+.footer {
+	background: #F2F2F2;
+}
+
+.footer__socials__icon {
+	fill: #666666;
+}
+
+.footer__socials__vkLink__icon {
+	width: 30px;
+	height: 22px;
+}
+
+.footer__socials__instaLink__icon {
+	width: 23px;
+	height: 23px;
+}
+
+.footer__socials__fbLink__icon {
+	width: 13px;
+	height: 27px;
+	fill: none;
+    stroke: #666;
+}
+
+.footer__academy {
+	align-items: center;
+}
+
+.footer__academy__text {
+	line-height: 18px;
+	padding-right: 22px;
+	color: #444444;
+}
+
+.footer__academy__logo {
+	width: 27px;
+	height: 34px;
+}
+
+/* ********* ********* HOVERS ********* ********* */
+
+.footer__logo--link:hover {
+	opacity: 0.8;
+}
+
+.footer__logo--link:active {
+	opacity: 0.6;
+}
+
+.footer__socials__link:hover .footer__socials__icon {
+	fill: #68B738;
+}
+
+.footer__socials__link:hover .footer__socials__fbLink__icon {
+	stroke: #68B738;
+}
+
+.footer__socials__link:active .footer__socials__icon {
+	fill: #68B738;
+	opacity: 0.3;
+}
+
+.footer__socials__link:active .footer__socials__fbLink__icon {
+	stroke: #68B738;
+	opacity: 0.3;
+}
+
+
+/* ********* ********* MEDIA ********* ********* */
+
+@media (min-width: 0) {
+
+	.footer {
+		padding-top: 39px;
+		padding-bottom: 22px;
+		text-align: center;
+	}
+
+	.footer__logo--link {
+		padding-bottom: 32px;
+		border-bottom: 1px solid #D9D9D9;
+		width: 100%;
+	}
+
+	.footer__socials {
+		padding: 20px 0;
+		border-bottom: 1px solid #D9D9D9;
+		width: 100%;
+	}
+
+	.footer__socials__instaLink__icon {
+		margin-left: 36px;
+		margin-right: 39px;
+	}
+
+	.footer__academy {
+		padding-top: 22px;
+		width: 100%;
+	}
+
+	.footer__academy__text {
+		font-size: 16px;
+	}
+
+}
+
+
+@media (min-width: 576px) {
+
+	.footer {
+		padding-top: 57px;
+		padding-bottom: 58px;
+	}
+
+	.footer__logo--link {
+		padding-bottom: 0;
+		border-bottom: none;
+		width: auto;
+	}
+
+	.footer__socials {
+		padding: 0;
+		border-bottom: none;
+		width: auto;
+	}
+
+	.footer__socials__instaLink__icon {
+		margin-left: 27px;
+		margin-right: 29px;
+	}
+
+	.footer__academy {
+		padding-top: 0;
+		width: auto;
+	}
+
+	.footer__academy__text {
+		font-size: 100%;
+	}
+
+}

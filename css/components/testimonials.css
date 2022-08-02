@@ -1,0 +1,129 @@
+.testimonial {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.testimonial__content {
+	border: 1px solid #CDCDCD;
+	border-bottom: none;
+	border-radius: 5px;
+	text-align: center;
+	position: relative;
+}
+
+.testimonial__content:before {
+	content: "";
+    position: absolute;
+    width: 10px;
+    height: 50%;
+	top: 50%;
+   	left: -1px;
+    border-bottom: 1px solid #CDCDCD;
+    border-radius: 0 0 0 5px;
+}
+
+.testimonial__content:after {
+	content: "";
+    position: absolute;
+    width: 10px;
+    height: 50%;
+	top: 50%;
+   	right: -1px;
+    border-bottom: 1px solid #CDCDCD;
+    border-radius: 0 0 5px 0;
+}
+
+
+.testimonial__subheading {
+	font-size: 14px;
+	line-height: 1;
+	color: #444444;
+	width: calc(100% - 10px);
+	white-space: nowrap;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+
+.testimonial__subheading__text {
+	flex: 1 0 auto;
+	white-space: break-spaces;
+	padding: 0 10px;
+}
+
+.testimonial__subheading__border {
+	height: 1px;
+	background: #CDCDCD;
+	position: relative;
+    top: calc(0.5em + 1px);
+}
+
+/* ********* ********* MEDIA ********* ********* */
+
+@media (min-width: 0) {	
+
+	.testimonial {
+		font-size: 24px;
+		line-height: 56px;
+	}
+	
+	.testimonial__content:last-child {
+		margin-left: 32px;
+	}
+
+	.testimonial__content {
+		width: 124px;
+		height: 56px;
+	}
+
+	.testimonial__subheading__text {
+		flex: 1 1 70%;
+		font-size: 12px;
+	}
+
+	.testimonial__subheading {
+	    transform: translate(-50%, calc(67%));
+	}
+
+	.testimonial__subheading__border {
+		flex: 1 1 15%;
+	}
+
+}
+
+@media (min-width: 576px) {	
+
+
+}
+
+@media (min-width: 625px) {	
+
+	.testimonial__content:last-child {
+		margin-left: 42px;
+	}
+
+	.testimonial {
+		font-size: 30px;
+		line-height: 72px;
+	}
+
+	.testimonial__content {
+		width: 162px;
+		height: 72px;
+	}
+
+	.testimonial__subheading__text {
+		flex: 1 0 auto;
+		font-size: 100%;
+	}
+
+	.testimonial__subheading {
+	    transform: translate(-50%, calc(50% - 1px));
+	}	
+
+	.testimonial__subheading__border {
+		flex: 1 1 auto;
+	}
+
+}
